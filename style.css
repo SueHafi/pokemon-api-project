@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  left: -99999px;
+  top: -99999px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(153, 212, 240);
+  margin-bottom: 48px;
+}
+
+.header-heading {
+  font-size: 6rem;
+  font-family: "Pokemon Solid", sans-serif;
+  text-align: center;
+  -webkit-text-fill-color: #ffcb05;
+  -webkit-text-stroke-width: 0.4px;
+  -webkit-text-stroke-color: #2a75bb;
+  text-shadow: 1px 1px 1px #3c5aa6;
+  margin-bottom: 16px;
+}
+
+.header-search-bar-container {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.input-search-bar {
+  font-size: 1.6rem;
+  padding: 9px 5px;
+  border-radius: 6px;
+}
+
+.button-search-bar {
+  font-size: 1.6rem;
+  border-radius: 6px;
+  padding: 10px 5px;
+  background-color: #2a75bb;
+  color: white;
+  border: none;
+}
+
+.button-search-bar:hover {
+  background-color: #3c5aa6;
+  cursor: pointer;
+  border: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.outer-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px 40px;
+  width: 300px;
+  height: 400px;
+  background-color: rgb(109, 200, 243);
+  border-radius: 8px;
+  border: 10px solid rgb(239, 196, 42);
+  margin-bottom: 48px;
+}
+
+.inner-container {
+  height: auto;
+  width: 100%;
+}
+
+.card-image {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.card-name {
+  font-size: 3.6rem;
+  margin-bottom: 10px;
+}
