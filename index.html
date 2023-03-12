@@ -9,33 +9,57 @@
       href="https://fonts.cdnfonts.com/css/pokemon-solid"
       rel="stylesheet"
     />
-    <script src="script.js"></script>
-    <title></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js" defer></script>
+    <title>Call a pokemon</title>
   </head>
   <body>
     <header class="header">
       <h1 class="header-heading">Call your favourite pokemon!</h1>
-      <div class="header-search-bar-container">
+      <form class="header-search-bar-container" data-id="form">
         <label class="sr-only" for="search-bar">Pokemon name</label>
         <input
           class="input-search-bar"
           id="search-bar"
           type="search"
           name="search-bar"
-          placeholder="Type pokemon name"
+          placeholder="Type Pokemon Name"
+          data-id="user-input"
         />
         <button class="button-search-bar">Search pokemon</button>
-      </div>
+      </form>
     </header>
     <div class="container">
       <div class="outer-container">
         <div class="inner-container">
-          <h2 class="card-name">Pokemon</h2>
+          <h2 class="card-title" data-id="pokemon-name">Pokemon</h2>
           <img
             class="card-image"
+            data-id="pokemon-image"
             src="Images/720X720-bulbasaur-original.jpg"
             alt="Pokemon"
           />
+          <div class="text-container">
+            <p class="card-text">Type:</p>
+            <span class="card-text-description" data-id="type">None</span>
+          </div>
+          <div class="text-container">
+            <p class="card-text">Hp:</p>
+            <span class="card-text-description" data-id="hp">0</span>
+          </div>
+          <div class="text-container">
+            <p class="card-text">Attack:</p>
+            <span class="card-text-description" data-id="attack">0</span>
+          </div>
+          <div class="text-container">
+            <p class="card-text">Defense:</p>
+            <span class="card-text-description" data-id="defense">0</span>
+          </div>
         </div>
       </div>
     </div>

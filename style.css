@@ -27,6 +27,7 @@ html {
 }
 
 .header-heading {
+  text-transform: capitalize;
   font-size: 6rem;
   font-family: "Pokemon Solid", sans-serif;
   text-align: center;
@@ -38,6 +39,10 @@ html {
 }
 
 .header-search-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
   text-align: center;
   margin-bottom: 48px;
 }
@@ -49,6 +54,7 @@ html {
 }
 
 .button-search-bar {
+  text-transform: capitalize;
   font-size: 1.6rem;
   border-radius: 6px;
   padding: 10px 5px;
@@ -72,10 +78,10 @@ html {
 .outer-container {
   margin-left: auto;
   margin-right: auto;
-  padding: 30px 40px;
-  width: 300px;
-  height: 400px;
-  background-color: rgb(109, 200, 243);
+  padding: 10px 50px 30px 50px;
+  width: 350px;
+  height: 500px;
+  background-color: rgba(109, 200, 243, 90%);
   border-radius: 8px;
   border: 10px solid rgb(239, 196, 42);
   margin-bottom: 48px;
@@ -89,9 +95,37 @@ html {
 .card-image {
   width: 100%;
   border-radius: 6px;
+  border: 5px solid rgba(0, 0, 0, 50%);
+  background-color: rgba(60, 90, 166, 50%);
+  margin-bottom: 10px;
 }
 
-.card-name {
-  font-size: 3.6rem;
+.card-title {
+  text-transform: capitalize;
+  /* font-size: 3.6rem;
+  margin-bottom: 10px; */
+  margin-bottom: 5px;
+  font-size: 4.6rem;
+  -webkit-text-fill-color: #ffcb05;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #2a75bb;
+  text-shadow: 1.5px 1.5px 1.5px #3c5aa6;
+}
+
+.card-text {
+  font-size: 1.8rem;
+  font-family: "Tilt Warp", cursive;
   margin-bottom: 10px;
+}
+
+.card-text-description {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-family: "Tilt Warp", cursive;
+  margin-bottom: 10px;
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-between;
 }
