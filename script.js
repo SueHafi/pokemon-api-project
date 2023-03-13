@@ -17,7 +17,7 @@ function handleFormSubmit(event) {
   event.preventDefault();
   const userInput = userInputElement.value;
 
-  fetch(`https://pokeapi.co/api/v2/pokemon/${userInput}`)
+  fetch(`https://pokeapi.co/api/v2/pokemon/${userInput.toLowerCase()}`)
     .then((response) => {
       if (response.ok) {
         return response.json();
