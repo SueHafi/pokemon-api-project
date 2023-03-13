@@ -28,7 +28,7 @@ html {
 
 .header-heading {
   text-transform: capitalize;
-  font-size: 6rem;
+  font-size: 3rem;
   font-family: "Pokemon Solid", sans-serif;
   text-align: center;
   -webkit-text-fill-color: #ffcb05;
@@ -139,3 +139,11 @@ html {
 .error-message--hidden {
   visibility: hidden;
 }
+
+/* 900 screen-size */
+
+@media (min-width: 56.25em) {
+  .header-heading {
+    font-size: 6rem;
+  }
+} ;
