@@ -23,14 +23,22 @@
       <h1 class="header-heading">Call your favourite pokemon!</h1>
       <form class="header-search-bar-container" data-id="form">
         <label class="sr-only" for="search-bar">Pokemon name</label>
-        <input
-          class="input-search-bar"
-          id="search-bar"
-          type="search"
-          name="search-bar"
-          placeholder="Type Pokemon Name"
-          data-id="user-input"
-        />
+        <div>
+          <input
+            class="input-search-bar"
+            id="search-bar"
+            type="search"
+            name="search-bar"
+            placeholder="Type Pokemon Name"
+            data-id="user-input"
+          />
+          <p
+            class="error-message error-message--hidden"
+            data-id="error-message"
+          >
+            Error: please try again later
+          </p>
+        </div>
         <button class="button-search-bar">Search pokemon</button>
       </form>
     </header>

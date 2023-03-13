@@ -6,16 +6,37 @@ const typeTextElement = document.querySelector('[data-id="type"]');
 const hpTextElement = document.querySelector('[data-id="hp"]');
 const attackTextElement = document.querySelector('[data-id="attack"]');
 const defenseTextElement = document.querySelector('[data-id="defense"]');
+const errorMessageElement = document.querySelector('[data-id="error-message"]');
 
 formElement.addEventListener("submit", handleFormSubmit);
+userInputElement.addEventListener("input", () => {
+  errorMessageElement.classList.add("error-message--hidden");
+});
 
 function handleFormSubmit(event) {
   event.preventDefault();
   const userInput = userInputElement.value;
 
   fetch(`https://pokeapi.co/api/v2/pokemon/${userInput}`)
-    .then((response) => response.json())
-    .then(displayData);
+    .then((response) => {
+      if (response.ok) {
+        return response.json();
+      } else if (response.status === 404) {
+        throw new Error("Pokemon not found");
+      }
+    })
+    .then(displayData)
+    .catch((error) => {
+      if (error.message === "Pokemon not found") {
+        const errorMessage = "Please type a valid pokemon name";
+        errorMessageElement.classList.remove("error-message--hidden");
+        errorMessageElement.textContent = errorMessage;
+      } else {
+        const errorMessage = "Error: please try again later";
+        errorMessageElement.textContent = errorMessage;
+        errorMessageElement.classList.remove("error-message--hidden");
+      }
+    });
 }
 
 function displayData(data) {

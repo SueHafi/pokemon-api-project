@@ -40,10 +40,10 @@ html {
 
 .header-search-bar-container {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 7px;
-  text-align: center;
   margin-bottom: 48px;
 }
 
@@ -51,6 +51,7 @@ html {
   font-size: 1.6rem;
   padding: 9px 5px;
   border-radius: 6px;
+  width: 100%;
 }
 
 .button-search-bar {
@@ -89,7 +90,6 @@ html {
 
 .inner-container {
   height: auto;
-  width: 100%;
 }
 
 .card-image {
@@ -104,8 +104,8 @@ html {
   text-transform: capitalize;
   /* font-size: 3.6rem;
   margin-bottom: 10px; */
-  margin-bottom: 5px;
-  font-size: 4.6rem;
+  margin-bottom: 8px;
+  font-size: 4rem;
   -webkit-text-fill-color: #ffcb05;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #2a75bb;
@@ -128,4 +128,14 @@ html {
 .text-container {
   display: flex;
   justify-content: space-between;
+}
+
+.error-message {
+  margin-top: 5px;
+  color: #dc1818;
+  font-size: 1.8rem;
+}
+
+.error-message--hidden {
+  visibility: hidden;
 }
