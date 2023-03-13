@@ -130,6 +130,28 @@ html {
   justify-content: space-between;
 }
 
+.footer {
+  /* background-color: rgb(153, 212, 240); */
+  background-color: #2a75bb;
+  height: 60px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-family: monospace;
+}
+
+a,
+a:link {
+  color: white;
+}
+
+a:hover,
+a:active {
+  color: rgb(153, 212, 240);
+}
+
 .error-message {
   margin-top: 5px;
   color: #dc1818;
