@@ -6,7 +6,7 @@ It calls on an existing Pokemon API to retrive the data, then it is displayed in
 
 ## How to use the API search
 
-Please type in a pokemon name into the search bar segment to retrive data from the API about that pokemon. For example if you type in "pickachu" it should retrive data about the pickachu's Type, Hp, Attack and Defense stats.
+Please type in a pokemon name into the search bar segment to retrive data from the API about that pokemon. For example if you type in "Pikachu"(or pikachu works with or without capitalization) it should retrive data about Pikachu's Type, Hp, Attack and Defense stats.
 
 ## How to clone the repository to try it for yourself
 
